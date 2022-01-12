@@ -36,11 +36,11 @@ body {
   color: white;
   height: auto;
   max-width: 300px;
-  width: 50%;
+  width: 100%;
   size: 100px;
-  position: absolute;
-  padding-top: 200px;
-  padding-bottom: 10px;
+  position: relative;
+  padding-top: 300px;
+  padding-bottom: 300px;
   animation: header 1s;
   animation-timing-function: ease-in;
   -webkit-animation-name: fade;
@@ -210,8 +210,11 @@ body {
 }
 
 #particles-js {
-   height: 100%;
-   position: relative;
+   height: 500%;
+   max-height: 420%;
+   position: absolute;
+   z-index: 900;
+   opacity: 70%;
 }
 
 .spotify {
@@ -227,6 +230,7 @@ body {
   max-width: 200px 200px;
   text-align: center;
   position: relative;
+  justify-content: center;
 }
 
 .mainnn {
