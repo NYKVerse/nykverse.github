@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Q&A</title>
+<meta charset="UTF-8">
+<link rel="icon" href="C:\NYK. Verse\Arts\Favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to top right, rgb(218, 98, 0),black, #425a8f );
+  background-size: 600% 600%;
+  height: auto;
+  padding:0;
+  margin:0;
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 68%}
+    50%{background-position:100% 33%}
+    100%{background-position:0% 68%}
+}
+
+/*Header Style*/
+.header {
+  padding: 50px;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+
+
+#navbar {
+  background-color: rgba(51, 51, 51, 0.377);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+/* Style the navigation bar links */
+#navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  
+}
+
+/* Right-aligned link */
+#navbar a.right {
+  float: right;
+}
+
+/* Change color on hover/mouse-over */
+#navbar a:hover {
+  background-color: white;
+  color: black; 
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+.askfrom {
+  color: white;
+}
+
+.askfrom:hover{
+  cursor: not-allowed;
+}
+
+/* Create two unequal columns that sits next to each other */
+.side {
+  flex: 30%;
+  background-color: #27385e5b; 
+  padding: 20px; 
+  color: white;
+}
+
+.main {
+  flex: 70%; 
+  background-color: #42788f; 
+  padding: 20px;
+}
+
+.about {
+  background-color: rgba(23, 83, 151, 0.377);
+  color:white;
+  padding: 20px;
+}
+
+.footer {
+  float: center; 
+  display: block;
+  background-color:  rgba(99, 148, 189, 0.288);
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.footer a {
+  overflow: hidden; /* Hide overflow */
+  background-color: rgba(99, 148, 189, 0); /* Dark background color */
+  size: 30px;
+}
+.footer a:hover {
+  background-color: rgba(125, 186, 255, 0.452);
+  color:  rgb(99, 148, 189);
+  padding: 20px 10px;
+  padding-bottom: 10px;
+  padding-top: 38px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #6b8eda70;
+  }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(184, 204, 231);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: block;
+  padding: 6px 30px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-image: linear-gradient(rgb(38, 73, 109) #9182);
+  color: white;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+</style>
+</head>
+<body>
+  
+  <div id="navbar">
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Home.html">Home</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Q&A.html">Q&A</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/special.html" class="right">Special</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Images.html">Images</a>
+  </div>
+
+  <div class="header">
+    <h1>Questions & Answers</h1>
+    <p></p>
+  </div>
+
+  <!-- Tab content -->
+
+  <div class="about">
+    <h1>From Instagram, Twitter, Discord, Friends, ETC.</h1>
+    <i>Tag @nykverse (twitter) or @nyk.verse (instagram) if you want to ask me</i>
+    <p>The Ask sumbission won't work cuz I haven't learn how to php so... just tag me</p>
+  </div>
+
+  <div class="askfrom">
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+    Ask : <input type="text" name="fname" placeholder="This Can't be used yet" style="width: 200px; height: 100;">
+    <input type="submit" value="Ask">
+    </form>
+  </div>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Normal Questions')">Normal Questions</button>
+      <button class="tablinks" onclick="openCity(event, 'Funny Questions')">Funny Questions</button>
+    </div>
+
+  <div id="Normal Questions" class="tabcontent">
+    <h2>Normal Questions</h2>
+    <b>Q : How to pronounce your name?</b>
+    <p>A : It's "Nick", it's like "Click" but with N at the begining. And "Verse" as "Universe". But it's up to you...</p>
+    <br>
+    <b>Q : Who is Acro Potify?</b>
+    <p>A : Acro Potify is actually my last name of my special nickname, but I use that to my fantasy story character or Ocs (original characters) that represent a person what I wanna be. (or just a random character)</p>
+    <br>
+    <b>Q : Are you Zach's friend?</b>
+    <p>A : Zach is actually my nickname, but I also be friend with him but he doesn't know me, so... ¯\_(ツ)_/¯</p>
+    <br>
+    <b>Q : What activities do you like? and why?</b>
+    <p>A : I love making and writing music/songs, arts, animations, coding/programing, and writing a story. because it makes me feel happy and having fun.</p>
+    <br>
+    <b>Q : Best quotes that you've found / made.</b>
+    <p>A : I don't know who made this quotes, but it said "Your Future Is In Your Pasts" means that whatever you do in the past, will got changed or happened in the future.</p>
+    <br>
+    <b>Q : New song, album or Ep? </b>
+    <p>A : Idk, maybe Album, or Ep...</p>
+    <br>
+    <b>Q : What keeps you motivated?</b>
+    <p>A : A cup of ginger tea, and memes</p>
+    <br>
+    <b>Q : </b>
+    <p>A : </p>
+  </div>
+
+  <div id="Funny Questions" class="tabcontent">
+    <h2>Funny Questions</h2>  
+    <b>Q : Honey comes from bee's,and then we eat the honey, does that's mean we're "bee" sensual?</b>
+    <p>A : why</p>
+    <br>
+    <b>Q : if I cook pancake,does that mean I'm pan?</b>
+    <p>A : If you love a frying pan or a pancake then you officially count as pan</p>
+    <br>
+    <b>Q : If you are a monster, you gonna bite me?</b>
+    <p>A : well yes, but actually no.</p>
+    <br>
+    <b>Q : </b>
+    <p>A : </p>
+    </div>
+  </div>
+  
+
+  <div class="footer">
+    <a href="https://open.spotify.com/artist/5Mje4mTNV38BAetvAXURBq?si=kTn3PvHbTkqaevhuERZTqw">
+      <img src="Images/Spotify Logo Png.png" width="40" height="40" alt="Spotify">  
+    </a>
+    <a href="https://nykverse.bandcamp.com/album/cavetown-remixes">
+      <img src="Images/BandCamp Png.png" width="40" height="40" alt="Bandcamp">
+    </a>
+    <a href="https://twitter.com/Nykverse">
+      <img src="Images/Twitter png.png" width="40" height="40" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/channel/UCUYeBUT11cDcb1C5FOC-nhg">
+      <img src="Images/YouTube png.png" width="40" height="40" alt="YouTube">
+    </a>
+    <a href="https://www.patreon.com/nykverse">
+      <img src="Images/Patreon Png.png" width="40" height="auto" alt="YouTube" style="float: left;">
+    </a>
+  </div>
+
+  <script>
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("you can't ask without questions lol");
+        return false;  
+      }    
+      $txt= $_POST['fname'].
+      $var_str3 = var_export($txt, true);
+      $var3 = "$var_str3";
+      file_put_contents('myForm.txt', $var3.PHP_EOL, FILE_APPEND);
+
+    }
+
+    
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Updates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.6), rgb(146, 146, 146));
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+/*Header Style*/
+.header {
+  padding: 50px;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+
+/* Style the top navigation bar */
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+/* Style the navigation bar links */
+#navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  
+}
+
+/* Right-aligned link */
+#navbar a.right {
+  float: right;
+}
+
+/* Change color on hover/mouse-over */
+#navbar a:hover {
+  background-color: white;
+  color: black; 
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  color:rgba(0, 255, 255, 0.397)
+}
+
+/* Create two unequal columns that sits next to each other */
+.side {
+  flex: 30%;
+  background-color: #27385e71; 
+  padding: 20px; 
+  color: white;
+}
+
+.main {
+  flex: 70%; 
+  background-color: #42788f6c; 
+  padding: 20px;
+}
+
+.Special {
+  background-color: rgba(23, 83, 151, 0.315);
+  color:white;
+}
+
+.Story {
+  background-color: rgba(87, 128, 175, 0.315);
+  color:white;
+}
+
+.StoryLink {
+  border: 0 3px 0 1px;
+  border-color: white;
+  border-style:dashed;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.StoryLink:hover {
+  background-color: white;
+}
+
+.footer {
+  padding: 10px; 
+  text-align: center; 
+  background: rgba(165, 165, 165, 0.267); 
+  color: rgb(255, 255, 255);
+}
+
+.footer img {
+  border-radius: 50%;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+</style>
+</head>
+<body>
+  
+    <div id="navbar">
+        <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/A%20Little%20Lost%20Story.html">Back To Previous</a>
+      </div> 
+    
+  <div class="header">
+  <h1>Updates</h1>
+  <p></p>
+  </div>
+
+  <div id="snow"></div>
+
+  <div class="row">
+    <div class="side">A Little Lost Story Project Updates</div>
+    <div class="main"></div>
+  </div>
+
+  <div class="Special">
+    <h1>Updates</h1>
+    <p>Coming soon</p>
+    <br>
+    <p></p>
+    <br>
+  </div>
+
+  <div class="Story">
+    <h1>Coming Soon</h1>
+    <p></p>
+    <br>
+    <a href=""></a>
+    <br>
+  </div>
+
+
+  <div class="footer">
+    <a href="https://www.instagram.com/m0n.riche/">
+      <img src="Images/3 Of Us/Pb Twitter Image.jpg" width="40" height="40" alt="Spotify">  
+    </a>
+    <a href="https://twitter.com/Nykverse">
+      <img src="Images/3 Of Us/Nyk Twitter Image.jpg" width="40" height="40" alt="Bandcamp">
+    </a>
+    <a href="https://www.patreon.com/nykverse">
+      <img src="Images/Patreon Png.png" width="40" height="auto" alt="YouTube" style="float: left;">
+    </a>
+  </div>
+
+  <script>
+
+    
+    document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+        particlesJS("snow", {
+            "particles": {
+                "number": {
+                    "value": 300,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 2,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "random",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 300,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": false
+                }
+            },
+            "retina_detect": true
+        });
+    }
+    document.head.append(script);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Special Thanks</title>
+<meta charset="UTF-8">
+<link rel="icon" href="C:\NYK. Verse\Arts\Favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to left, rgb(218, 98, 0),black, #425a8f );
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+/*Header Style*/
+.header {
+  padding: 50px;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: white;
+  color: black; 
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  color:cyan
+}
+
+/* Create two unequal columns that sits next to each other */
+.side {
+  flex: 30%;
+  background-color: #27385e; 
+  padding: 20px; 
+  color: white;
+}
+
+.main {
+  flex: 70%; 
+  background-color: #42788f; 
+  padding: 20px;
+}
+
+.Special {
+  background-color: rgba(23, 83, 151, 0.315);
+  color:white;
+}
+
+.Story {
+  background-color: rgba(87, 128, 175, 0.315);
+  color:white;
+}
+
+.StoryLink {
+  border: 0 3px 0 1px;
+  border-color: white;
+  border-style:dashed;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.StoryLink:hover {
+  background-color: white;
+}
+
+.footer {
+  padding: 10px; 
+  text-align: center; 
+  background: rgba(143, 186, 236, 0.267); 
+  color: rgb(255, 255, 255);
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+</style>
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Home.html">Home</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Q&A.html">Q&A</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/special.html" class="right">Special</a>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Images.html">Images</a>
+  </div>
+
+  <div class="header">
+  <h1>Special</h1>
+  <p></p>
+  </div>
+
+  <div id="snow"></div>
+
+  <div class="row">
+    <div class="side">Welcome</div>
+    <div class="main"></div>
+  </div>
+
+  <div class="Special">
+    <h1>Special Thanks</h1>
+    <p>to all of my friends</p>
+    <br>
+    <p>Monica, Daanish, Whasfa, Zach, Razor, Janna, Angel, Jaxx, My Mum, My Dad, My Sisters, My Phone and more</p>
+    <br>
+  </div>
+
+  <div class="Story">
+    <h1>A Little Lost Story Project</h1>
+    <p>Some Update of me and Monica's Fantasy Story</p>
+    <br>
+    <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/A%20Little%20Lost%20Story.html" class="StoryLink">A Little Lost Story Project</a>
+    <br>
+  </div>
+
+
+  <div class="footer">
+    <a href="https://open.spotify.com/artist/5Mje4mTNV38BAetvAXURBq?si=kTn3PvHbTkqaevhuERZTqw">
+      <img src="Images/Spotify Logo Png.png" width="40" height="40" alt="Spotify">  
+    </a>
+    <a href="https://nykverse.bandcamp.com/album/cavetown-remixes">
+      <img src="Images/BandCamp Png.png" width="40" height="40" alt="Bandcamp">
+    </a>
+    <a href="https://twitter.com/Nykverse">
+      <img src="Images/Twitter png.png" width="40" height="40" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/channel/UCUYeBUT11cDcb1C5FOC-nhg">
+      <img src="Images/YouTube png.png" width="40" height="40" alt="YouTube">
+    </a>
+    <a href="https://www.patreon.com/nykverse">
+      <img src="Images/Patreon Png.png" width="40" height="auto" alt="YouTube" style="float: left;">
+    </a>
+  </div>
+
+  <script>
+
+    
+    document.addEventListener('DOMContentLoaded', function(){
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function(){
+        particlesJS("snow", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "random",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 300,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": true
+                    },
+                    "resize": false
+                }
+            },
+            "retina_detect": true
+        });
+    }
+    document.head.append(script);
+});
+  </script>
+</body>
+</html>

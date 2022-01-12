@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, rgb(218, 98, 0),black, #425a8f );
+    background-size: 600% 600%;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 68%}
+      50%{background-position:100% 33%}
+      100%{background-position:0% 68%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 68%}
+      50%{background-position:100% 33%}
+      100%{background-position:0% 68%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 68%}
+      50%{background-position:100% 33%}
+      100%{background-position:0% 68%}
+  }
+  
+  
+  /*Header Style*/
+  .header {
+    padding: 50px;
+    text-align: center;
+    background: transparent;
+    color: white;
+  }
+  
+  /* Style the top navigation bar */
+  #navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+  }
+  
+  /* Style the navigation bar links */
+  #navbar a {
+    float: left; 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+  }
+  
+  /* Right-aligned link */
+  #navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover/mouse-over */
+  #navbar a:hover {
+    background-color: white;
+    color: black; 
+  }
+  
+  /* Ensure proper sizing */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    color:cyan
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  .side {
+    flex: 30%;
+    background-color: #27385e6e; 
+    padding: 20px; 
+    color: white;
+  }
+  
+  .main {
+    flex: 70%; 
+    background-color: #42788f98; 
+    padding: 20px;
+  }
+  
+  .about {
+    background-image: linear-gradient(to top right, rgba(218, 98, 0, 0.158),rgba(0, 0, 0, 0.116), #425a8f38 );
+    color:white;
+  }
+  
+  .footer {
+    float: center; 
+    display: block;
+    background-color:  rgba(99, 148, 189, 0.288);
+    color: white;
+    text-align: center;
+    padding: 13px 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    background-color: rgba(125, 186, 255, 0.452);
+    color:  rgb(99, 148, 189);
+    padding: 20px 10px;
+    padding-bottom: 10px;
+    padding-top: 38px;
+    padding-left: 15px;
+    text-align: center;
+  }
+  
