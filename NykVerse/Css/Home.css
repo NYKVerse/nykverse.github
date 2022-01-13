@@ -212,7 +212,7 @@ body {
 #particles-js {
    height: 400vh;
    position: absolute;
-   z-index: 900;
+   z-index: -900;
    opacity: 70%;
 }
 
