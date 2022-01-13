@@ -47,6 +47,7 @@ body {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  z-index:-1000;
 }
 
 @keyframes fade {
