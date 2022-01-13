@@ -217,6 +217,13 @@ body {
    opacity: 70%;
 }
 
+.Twitter-timeline {
+  justify-content: center;
+  opacity: 70%;
+  max-width: 100%;
+  padding: 50px;
+}
+
 .spotify {
   padding: 30px;
 }
