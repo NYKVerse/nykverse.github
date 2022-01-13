@@ -24,36 +24,35 @@ body {
 }
 
 /* Style the top navigation bar */
-.navbar {
-  background-color: #333;
+#navbar {
+  background-color: rgba(51, 51, 51, 0.651);
   position: fixed;
   top: 0;
   width: 100%;
-  transition: top 0.3s;
+  transition: top 0.5s;
+  z-index: 4;
 }
 
 /* Style the navigation bar links */
-.navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-  
+#navbar a {
+  float: left; 
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
 /* Right-aligned link */
-.navbar a.right {
+#navbar a.right {
   float: right;
 }
 
 /* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: white;
+#navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.521);
   color: black; 
 }
-
 /* Ensure proper sizing */
 * {
   box-sizing: border-box;
