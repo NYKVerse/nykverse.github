@@ -9,7 +9,30 @@
 <meta content="C:\NYK. Verse\Arts\NYK. Verse Logo Remake.png">
 </head>
 
-<style> 
+<style class="Webkits">
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f170;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 133, 133);
+  mix-blend-mode: overlay;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(119, 119, 119);
+}
+</style>
+<style>
   body {
   font-family: Arial, Helvetica, sans-serif; 
   background-image: linear-gradient(to bottom right, rgb(218, 98, 0),black, #425a8f );
@@ -76,8 +99,9 @@
   max-width: 40px;
 }
 
+
 .EmailMe:hover {
-  background-color: rgb(224, 240, 253);
+  background-blend-mode:overlay; 
 }
 
 /* Style the top navigation bar */
@@ -144,6 +168,7 @@
   background-image: linear-gradient(rgba(57, 125, 214, 0.2) rgb(120, 110, 212));
   color:white;
   padding: 30px;
+  margin: 40px;
   }
 
 .details {  
@@ -151,12 +176,11 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 13px;
   background-color: rgba(255, 255, 255, 0.226);
-  padding: 20px;
   border: rgb(255, 255, 255);
   border-radius: 10px;
   box-sizing: border-box;
-  width: 50%;
-  padding-left: 100px;
+  width: 70%;
+  margin: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -165,30 +189,7 @@
   float: right;
   align-items: right;
   padding: 10px;
-}
-.footer {
-  float: center; 
-  display: block;
-  background-color:  rgba(99, 148, 189, 0.288);
-  color: white;
-  text-align: center;
-  padding: 13px 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-}
-.footer a {
-  overflow: hidden; /* Hide overflow */
-  background-color: rgba(99, 148, 189, 0); /* Dark background color */
-  size: 30px;
-}
-.footer a:hover {
-  background-color: rgba(125, 186, 255, 0.452);
-  color:  rgb(99, 148, 189);
-  padding: 20px 10px;
-  padding-bottom: 10px;
-  padding-top: 38px;
-  padding-left: 15px;
-  text-align: center;
+  margin: 40px;
 }
 
 .opening {
@@ -239,23 +240,21 @@
   justify-content: center;
   opacity: 70%;
   max-width: 100%;
-  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .spotify {
   padding: 30px;
 }
 
-.ghostfriendv2 {
-  padding-left: auto;
-  padding-right: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin: center;
-  max-width: 200px 200px;
+.ytvid {
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  position: relative;
   justify-content: center;
+  display: block;
 }
 
 .mainnn {
@@ -266,6 +265,36 @@
   position: relative;
   font-family:monospace;
 }
+
+.footer {
+  display: block;
+  background-color:  rgba(99, 148, 189, 0.288);
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.footer a {
+  overflow: hidden; /* Hide overflow */
+  background-color: rgba(99, 148, 189, 0); /* Dark background color */
+  size: 30px;
+  float: center;
+}
+
+#footer a.left {
+  float: left;
+}
+
+.footer a:hover {
+  filter: brightness(150%);
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.527);
+  margin: 40px;
+}
+
 </style>
 
 <body>
@@ -289,59 +318,59 @@
       draggable="false" style="padding-bottom: 50px;">
   </div>
 
-  <div class="mainnn"> Official Website (Still In Development) </div>
+  <div class="content">
+    <div class="mainnn"> Official Website (Still In Development) </div>
 
-  <div class="ghostfriendv2">
-    <iframe width="max-width" height="auto" src="https://www.youtube-nocookie.com/embed/fGZA7dPydWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+    <div>
+      <iframe class="ytvid" width="560" height="315" src="https://www.youtube.com/embed/bwsLjfHLd10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
 
-  <div class="EmailMe">
-    <a href="mailto: acro.potify@gmail.com?subject = Email"><img src="NykVerse/Images/Email png.png" width="40" height="40"></a>
-  </div>
-
-
-
-  <div class="opening">
-    <h1><i>Opening</i></h1>
-    <b> Welcome to Nyk Verse's official website</b>
-  </div>
-
-  <div class="ClipMage">
-    <img src="C:\NYK. Verse\Arts\Nykcro Potiverse.png" width="200px" height="auto" style="max-width: 300px">
-  </div>
-
-  <div class="about">
-    <h1>About</h1>
-    <p>Nayaka Abhipraya or professionally called <u><b>NYK. Verse / Nyk. Verse</b></u> <span data-tooltip="This is how to pronounce it"><i style="color: red;">(Nick Verse)</i></span> is a young boy that create music, animations, arts, fantasy story and more stuff. Nyk considers himself as "a Normal Young Kid that creates stuff" because of his name "NYK" which also means "Normal Young Kid" and "Verse" which means Universal and could also mean Forward. Nyk has a lot of nicknames from his friends and some nicknames that he made for himself. "Acro Potify" is one of the most used nicknames that Nyk uses for himself. </p>
-
-    <P>Nyk started music production in 2019 with his first mp3 song called "Just For U". He made "Just For U" for describing all the wonderful things about his ex-girlfriend.</P>
-      
-    <p>After he made his first song "Just For U", He started to make a new one called "Angel". He writes lyrics of it but never sings cause he can't really sing much. "Angel" and "Just For U" are actually a sequel. Nyk started to produce and write more songs about bad feelings and happiness.</p>
-      
-    <p>Nyk stopped making music for a while and editing some stuff such as "Zach Callison - War! Extended Lyric Video" that he uploaded into his YouTube named "NYK. Verse". His editing videos makes his channel grow faster and grow a lot of subscribers, but then he stopped uploading some editing videos but he upload more of his music to his YouTube with his 7th music called "Book Of Dream" and then continue with other music like "Never Left Me Behind", "Going Somewhere" and more.</p>
-    <br>
-  </div>
+    <div class="EmailMe">
+      <a href="mailto: acro.potify@gmail.com?subject = Email"><img class="EmailImage" src="NykVerse/Images/Email png.png" width="40" height="40"></a>
+    </div>
 
 
-  <div class="details">
-    <h3>Details</h3>
- 
-    <p>Born : December 7 2006 (age 14 years), <a href="https://en.wikipedia.org/wiki/Palangka_Raya">Palangka Raya City, Central Kalimantan, Indonesia</a></P>
-    <p>Nicknames : <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Q&A.html">Acro Potify,</a> Zach, Bryan, Nick, Nyk.</p>
-    <p>Pronounce : he/they</p>
-    <p>Occupations : Musician, Artist, Animator, Writter, Producer, Programmer, Director, </p>
-    <p>Genres : EDM, Orchestra, Pop, Indie</p>
-    <p>Years Active : 2019 - Presents</p>
-  </div>
+
+    <div class="opening">
+      <h1><i>Opening</i></h1>
+      <b> Welcome to Nyk Verse's official website</b>
+    </div>
+
+    <div class="ClipMage">
+      <img src="C:\NYK. Verse\Arts\Nykcro Potiverse.png" width="200px" height="auto" style="max-width: 300px">
+    </div>
+
+    <div class="about">
+      <h1>About</h1>
+      <p>Nayaka Abhipraya or professionally called <u><b>NYK. Verse / Nyk. Verse</b></u> <span data-tooltip="This is how to pronounce it"><i style="color: red;">(Nick Verse)</i></span> is a 15 years old musician, animator, artist, designer, editor, writer. Nyk considers himself as "a Normal Young Kid that creates stuff" because of his name "NYK (Normal Young Kid) and Verse (Universal/Do everything by himself)".</p>
+
+      <P>Nyk started music production in 2019 with his first MP3 song called "Just For U". Nyk started to produce and write more songs about bad feelings and happiness.</P>
+        
+      <p>Nyk stopped making music for a while and making editing videos such as "Zach Callison - War! Extended Lyric Video" that he uploaded into his YouTube named "NYK. Verse". His editing videos makes his channel grow faster and grow a lot of subscribers, but then he stopped uploading some editing videos but then he upload more of his music to his YouTube with his 7th music called "Book Of Dream" and then continue with other music like "Never Left ME Behind", "Going Somewhere" and more.</p>
+      <br>
+    </div>
+
+
+    <div class="details">
+      <h3>Details</h3>
   
-  <div class="spotify">
-    <iframe src="https://open.spotify.com/embed/artist/5Mje4mTNV38BAetvAXURBq" width="100%" height="250px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </div>
+      <p>Born : December 7 2006 (age 14 years), <a href="https://en.wikipedia.org/wiki/Palangka_Raya">Palangka Raya City, Central Kalimantan, Indonesia</a></P>
+      <p>Nicknames : <a href="file:///C:/NYK.%20Verse/Projects/Website/NykVerse/Q&A.html">Acro Potify,</a> Zach, Bryan, Nick, Nyk.</p>
+      <p>Pronounce : he/they</p>
+      <p>Occupations : Musician, Artist, Animator, Writter, Producer, Programmer, Director, </p>
+      <p>Genres : EDM, Orchestra, Pop, Indie</p>
+      <p>Years Active : 2019 - Presents</p>
+    </div>
+    
+    <div class="spotify">
+      <iframe src="https://open.spotify.com/embed/artist/5Mje4mTNV38BAetvAXURBq" width="100%" height="250px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
 
-  <div class="Twitter-timeline">
-    <a class="twitter-timeline" data-width="100%" data-height="400" data-dnt="true" data-theme="dark" allowtransparency="true"
-      href="https://twitter.com/Nykverse?ref_src=twsrc%5Etfw">Tweets by Nykverse</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="Twitter-timeline">
+      <a class="twitter-timeline" data-width="100%" data-height="400" data-dnt="true" data-theme="dark" allowtransparency="true"
+        href="https://twitter.com/Nykverse?ref_src=twsrc%5Etfw">Tweets by Nykverse</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
   </div>
 
   </div>
@@ -349,13 +378,13 @@
     <a href="https://open.spotify.com/artist/5Mje4mTNV38BAetvAXURBq?si=kTn3PvHbTkqaevhuERZTqw">
       <img src="NykVerse/Images/Spotify Logo Png.png" width="40" height="40" alt="Spotify">  
     </a>
-    <a href="https://nykverse.bandcamp.com/album/cavetown-remixes">
+    <a href="https://nykverse.bandcamp.com">
       <img src="NykVerse/Images/BandCamp Png.png" width="40" height="40" alt="Bandcamp">
     </a>
     <a href="https://twitter.com/Nykverse">
       <img src="NykVerse/Images/Twitter png.png" width="40" height="40" alt="Twitter">
     </a>
-    <a href="https://www.youtube.com/channel/UCUYeBUT11cDcb1C5FOC-nhg">
+    <a href="https://www.youtube.com/c/nykverseyeet">
       <img src="NykVerse/Images/YouTube png.png" width="40" height="40" alt="YouTube">
     </a>
     <a href="https://www.patreon.com/nykverse">
