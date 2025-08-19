@@ -1,426 +1,68 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Nyk Verse</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="NykVerse\Css\Home.css">
-<link rel="icon" href="NykVerse/Images/NV/Nyk Logo V2.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="C:\NYK. Verse\Arts\NYK. Verse Logo Remake.png">
-</head>
-
-<style class="Webkits">
-  /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f170;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(133, 133, 133);
-  mix-blend-mode: overlay;
-  
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(119, 119, 119);
-}
-</style>
-<style>
-  body {
-  font-family: Arial, Helvetica, sans-serif; 
-  background-image: linear-gradient(to bottom right, rgb(218, 98, 0),black, #425a8f );
-  background-repeat: url('https://giphy.com/gifs/cPlsuCWPznPZ98kV2J/html5');
-  background-size: 600% 600%;
-  height: 100vh;
-  padding:0;
-  margin:0;
-  position: sticky;
-  -webkit-animation: AnimationName 9s ease infinite;
-  -moz-animation: AnimationName 9s ease infinite;
-  animation: AnimationName 9s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 68%}
-    50%{background-position:100% 33%}
-    100%{background-position:0% 68%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 68%}
-    50%{background-position:100% 33%}
-    100%{background-position:0% 68%;}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 68%}
-    50%{background-position:100% 33%}
-    100%{background-position:0% 68%}
-}
-
-.Logo {
-  text-align: center;
-  object-position: center;
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
-  height: auto;
-  max-width: 300px;
-  width: 100%;
-  size: 100px;
-  position: relative;
-  padding-top: 300px;
-  padding-bottom: 300px;
-  animation: header 1s;
-  animation-timing-function: ease-in;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  z-index:-1000;
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  100% {opacity: 100;}
-  0% {opacity: 0;}
-}
-
-
-
-.EmailMe {
-  overflow: hidden;
-  background-color: rgba(110, 179, 219, 0.295);
-  max-width: 40px;
-}
-
-
-.EmailMe:hover {
-  background-blend-mode:overlay; 
-}
-
-/* Style the top navigation bar */
-#navbar {
-  background-color: rgba(51, 51, 51, 0.651);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: top 0.5s;
-  z-index: 4;
-}
-
-/* Style the navigation bar links */
-#navbar a {
-  float: left; 
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-#navbar a.right {
-  float: right;
-}
-
-/* Change color on hover/mouse-over */
-#navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.521);
-  color: black; 
-}
-
-/* Ensure proper sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  color:cyan;
-  position: relative;
-}
-
-/* Create two unequal columns that sits next to each other */
-.side {
-  flex: 30%;
-  background-color: #39445c49; 
-  padding: 20px; 
-  color: black;
-  filter: invert(100%);
-  position: relative;
-}
-.main {
-  flex: 70%; 
-  background-color: #8f7b4270; 
-  padding: 20px;
-  filter: invert(100%);
-  position: relative;
-}
-.about {
-  background-image: linear-gradient(rgba(57, 125, 214, 0.2) rgb(120, 110, 212));
-  color:white;
-  padding: 30px;
-  margin: 20px;
-  }
-
-.details {  
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 13px;
-  background-color: rgba(255, 255, 255, 0.226);
-  border: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-sizing: border-box;
-  width: 90%;
-  margin: 40px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.ClipMage{
-  float: right;
-  align-items: right;
-  padding: 10px;
-}
-
-.opening {
-  background-image: linear-gradient(to left, rgba(26, 100, 204, 0.199), rgba(0, 0, 0, 0.219), rgba(221, 133, 17, 0.137));
-  color: rgb(0, 0, 0);
-  filter :invert(100%);
-  position: relative;
-}
-  
-[data-tooltip] {
-  position: relative;
-  cursor: default;
-}
-[data-tooltip]::after {
-  position: absolute;
-  width: 140px;
-  left: calc(50% - 70%);
-  bottom: 125%;
-  box-sizing: border-box;
-
-  content: attr(data-tooltip);
-  color: #ffffff;
-  background: black;
-  padding: 8px;
-  border-radius: 10px;
-  font-size: 10px;
-  font-weight: bold;
-
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s, transform 0.2s;
-}
-[data-tooltip]:hover::after {
-  opacity : 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-#particles-js {
-   height: 400vh;
-   position: absolute;
-   z-index: -900;
-   opacity: 70%;
-}
-
-.Twitter-timeline {
-  justify-content: center;
-  opacity: 70%;
-  max-width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: block;
-}
-
-.spotify {
-  padding: 30px;
-}
-
-.ytvid {
-  margin: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  justify-content: center;
-  display: block;
-  width: 100%;
-  height: 315px;
-  max-width: auto;
-  max-height: auto;
-}
-
-.mainnn {
-  flex: 70%; 
-  background-color: #8f7b4270; 
-  padding: 20px;
-  filter: invert(100%);
-  position: relative;
-  font-family:monospace;
-}
-
-.footer {
-  display: block;
-  background-color:  rgba(99, 148, 189, 0.288);
-  color: white;
-  text-align: center;
-  padding: 13px 20px;
-  padding-bottom: 10px;
-  text-decoration: none;
-}
-.footer a {
-  overflow: hidden; /* Hide overflow */
-  background-color: rgba(99, 148, 189, 0); /* Dark background color */
-  size: 30px;
-  float: center;
-}
-
-#footer a.left {
-  float: left;
-}
-
-.footer a:hover {
-  filter: brightness(150%);
-}
-
-.content {
-  background-color: rgba(0, 0, 0, 0.527);
-  margin: 20px;
-}
-
-</style>
-
-<body>
-
-
-  <div id="navbar">
-    <a href="index.html">Home</a>
-    <a href="Q&A.html">Q&A</a>
-    <a href="Special.html" class="right">Special</a>
-    <a href="Images.html">Images</a>
-  </div> 
-
-  <div id="particles-js"></div>
-  <script type="text/javascript" src="NykVerse/Js/particles.js"></script>
-  <script type="text/javascript" src="NykVerse/Js/app.js"></script>
-  
-  <div class="Logo">
-    <img class="Logos" src="NykVerse/Images/NV/NV New PNG.png" alt="Nlogo" width="100%" height="auto" draggable="false"
-      style="padding-bottom: 50px;">
-    <img class="Logos" src="NykVerse/Images/NV/AcroPotify Logo PNG.png" alt="Nlogo" width="100%" height="auto"
-      draggable="false" style="padding-bottom: 50px;">
-  </div>
-
-  <div class="content">
-    <div class="mainnn"> Official Website (Still In Development) </div>
-
-    <div class="ytvid">
-      <iframe class="ytvid" src="https://www.youtube.com/embed/bwsLjfHLd10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
-
-    <div class="EmailMe">
-      <a href="mailto: acro.potify@gmail.com?subject = Email"><img class="EmailImage" src="NykVerse/Images/Email png.png" width="40" height="40"></a>
-    </div>
-
-
-
-    <div class="opening">
-      <h1><i>Opening</i></h1>
-      <b> Welcome to Nyk Verse's official website</b>
-    </div>
-
-    <div class="ClipMage">
-      <img src="C:\NYK. Verse\Arts\Nykcro Potiverse.png" width="200px" height="auto" style="max-width: 300px">
-    </div>
-
-    <div class="about">
-      <h1>About</h1>
-      <p>Nayaka Abhipraya or professionally called <u><b>NYK. Verse / Nyk. Verse</b></u> <span data-tooltip="This is how to pronounce it"><i style="color: red;">(Nick Verse)</i></span> is a 15 years old musician, animator, artist, designer, editor, writer. Nyk considers himself as "a Normal Young Kid that creates stuff" because of his name "NYK (Normal Young Kid) and Verse (Universal/Do everything by himself)".</p>
-
-      <P>Nyk started music production in 2019 with his first MP3 song called "Just For U". Nyk started to produce and write more songs about bad feelings and happiness.</P>
-        
-      <p>Nyk stopped making music for a while and making editing videos such as "Zach Callison - War! Extended Lyric Video" that he uploaded into his YouTube named "NYK. Verse". His editing videos makes his channel grow faster and grow a lot of subscribers, but then he stopped uploading some editing videos but then he upload more of his music to his YouTube with his 7th music called "Book Of Dream" and then continue with other music like "Never Left ME Behind", "Going Somewhere" and more.</p>
-      <br>
-    </div>
-
-
-    <div class="details">
-      <h3>Details</h3>
-  
-      <p>Born : December 7 2006 (age 14 years), <a href="https://en.wikipedia.org/wiki/Palangka_Raya">Palangka Raya City, Central Kalimantan, Indonesia</a></P>
-      <p>Nicknames : <a href="Q&A.html">Acro Potify,</a> Zach, Bryan, Nick, Nyk.</p>
-      <p>Pronouns : he/they</p>
-      <p>Occupations : Musician, Artist, Animator, Writter, Producer, Programmer, Director, </p>
-      <p>Genres : EDM, Orchestra, Pop, Indie</p>
-      <p>Years Active : 2019 - Presents</p>
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nv.css">
     
-    <div class="spotify">
-      <iframe src="https://open.spotify.com/embed/artist/5Mje4mTNV38BAetvAXURBq" width="100%" height="250px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <title>Nyk Verse</title>
+</head>
+<body>
+    <div class="container">
+        <label for="toggle" class="star"><img src="img/star.png" alt=""></label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
+            <div class="left">
+                <a href="index.html" class="item">Home</a>
+                <a href="gallery.html" class="item">Gallery</a>    
+            </div>
+            <div class="right">
+                <a href="bio.html" class="item">Bio</a>
+                <a href="contacts.html" class="item">Connects</a>
+            </div>
+        </div>
     </div>
-
-    <div class="Twitter-timeline">
-      <a class="twitter-timeline" data-width="100%" data-height="400" data-dnt="true" data-theme="dark" allowtransparency="true"
-        href="https://twitter.com/Nykverse?ref_src=twsrc%5Etfw">Tweets by Nykverse</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="newlogo">
+        <img src="img/nvrebrand.png" class="nvre" alt="" srcset="">
     </div>
+    <div class="logo" id="home">
+        <img src="img/NykVerse1.gif" alt="Why you hovering this?">
+    </div>
+    <div class="space"></div>
+    <div class="body">
+        <h1>Latest Video</h1>
+        <iframe class="yt" width="1080" height="720" src="https://www.youtube.com/embed/Wdt9ZG6CSbM?si=T4ZcJMD80hPrQFkR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="space"></div>
+        <h1>Projects</h1>
+        <div class="projects">
+            <a href="https://open.spotify.com/album/0fQse4t0GwqSYEWcSNSTIZ?si=eFyG3MlARo-bLmSFaknB7Q"><img src="img/lff.png" alt="" srcset="" class="dig"></a> 
+                
+            <a href="https://open.spotify.com/album/72jhIUme2zJ1rKjViufkMY?si=apSnOLxBQ7SE8AMDUOCLdg"><img src="img/pastelgalaxy.png" alt="" srcset="" class="dig"></a>
+            <a href="https://open.spotify.com/album/5JebDByl3KnoWR5X4C6nSt?si=Cq_02iDLRLC9_xJH6aSy1A"><img src="img/butterflyhall.png" alt="" srcset="" class="dig"></a>
+            <a href="https://open.spotify.com/album/0fQse4t0GwqSYEWcSNSTIZ?si=PmXxwIFfQVuxpWN2ow4AaQ"><img src="img/Duniainigila.png" alt="" srcset="" class="dig"></a>
+            <img src="img/mungkinnanti.png" alt="" srcset="" class="dig">
+        </div>
+        <h1>Upcoming Projects</h1>
+        <div class="projects">
+            <img src="img/jangankaulupakan.png" alt="" srcset="" class="dig">        
+        </div>
+        <div class="space"></div>
+        <h1>Merchandise</h1>
+        <h2>Coming Soon.</h2>
+        <div class="space" id="bio"></div>
+        <h1>BIO</h1>
+        <p class="bio">Hi, I'm Nyk. Through my work, I aim to build immersive experiences that blend music, storytelling, and visual art, drawing people into emotional landscapes that explore the struggles, resilience, and quiet moments that define us all.
 
-  </div>
-
-  </div>
-  <div class="footer">
-    <a href="https://open.spotify.com/artist/5Mje4mTNV38BAetvAXURBq?si=kTn3PvHbTkqaevhuERZTqw">
-      <img src="NykVerse/Images/Spotify Logo Png.png" width="40" height="40" alt="Spotify">  
-    </a>
-    <a href="https://nykverse.bandcamp.com">
-      <img src="NykVerse/Images/BandCamp Png.png" width="40" height="40" alt="Bandcamp">
-    </a>
-    <a href="https://twitter.com/Nykverse">
-      <img src="NykVerse/Images/Twitter png.png" width="40" height="40" alt="Twitter">
-    </a>
-    <a href="https://www.youtube.com/c/nykverseyeet">
-      <img src="NykVerse/Images/YouTube png.png" width="40" height="40" alt="YouTube">
-    </a>
-    <a href="https://www.patreon.com/nykverse">
-      <img src="NykVerse/Images/Patreon Png.png" width="40" height="auto" alt="YouTube" style="float: left;">
-    </a>
-  </div>
+            At the heart of my creative journey is the Pastel Galaxy Universe, a world I've developed across multiple albums and projects. Each piece — from Dikhianati Oleh Dunia, which reflects on the feeling of being let down by society, to Sky Lullaby, a lullaby of dreams and challenges — represents a piece of my own story while reaching out to connect with anyone who's ever felt unseen or misunderstood.
+            
+            In creating characters like Flower and Nikolas and placing them in worlds like Homefield, a space of quiet reflection, or Cryon's World, a dark mirror of inner traumas, I try to capture the realities of mental health and the unseen struggles we carry. These worlds aren't just fantasy; they're metaphors for the experiences we all share but sometimes find hard to express.
+            
+            I approach each project as a chance to dig deeper into what it means to be human, to bring comfort, and to let others know they're not alone in their journey. The Nyk Verse isn't just my world; it's a space for introspection and connection, a place where art, music, and story meet to form something personal yet universal.
+        </p>
+        <p class="bio">
+            Welcome to The Nyk Verse Project, where Visuals, Audio, and Literature became a brand new universe.
+        </p>
+        <div class="space"></div>
+        <p>© Nyk Verse 2024</p>
+    </div>
 </body>
-<script>
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-  document.getElementById("navbar").style.top = "0";
-} else {
-  document.getElementById("navbar").style.top = "-50px";
-}
-prevScrollpos = currentScrollPos;
-}
-
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-var i;
-var x = document.getElementsByClassName("Logos");
-for (i = 0; i < x.length; i++) {
-x[i].style.display = "none";
-}
-slideIndex++;
-if (slideIndex > x.length) {slideIndex = 1}
-x[slideIndex-1].style.display = "block";
-setTimeout(carousel, 7000); // Change image every 2 seconds
-}
-</script>
 </html>
